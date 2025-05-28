@@ -47,46 +47,231 @@
 	      </div>
 	    </div>
 	  </nav>
-	  <section id="home-section" class="hero">
-		  <div class="home-slider  owl-carousel">
-	      <div class="slider-item ">
-	      	<div class="overlay"></div>
-	        <div class="container">
-	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/khan-removebg-preview.png);">
-	          		<div class="overlay"></div>
-	          	</div>
-		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-		          	<div class="text">
-		          		<span class="subheading">Hello!</span>
-			            <h1 class="mb-4 mt-3">I'm <span> Waseem Khan</span></h1>
-			            <h2 class="mb-4">AI & Web3 Enthusiast | Prompt Engineer | Community & BD Specialist</h2>
-			            <p><a href="#" class="btn btn-primary py-3 px-4">Hire me</a> <a href="#" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
-		            </div>
-		          </div>
-	        	</div>
-	        </div>
-	      </div>
+	     
+<section class="profile-section">
+    <div class="wrapper">
+        <div class="bio-box">
+            <div class="profile-image-container">
+                <img src="images/khan-removebg-preview.png" alt="Waseem Khan" class="profile-image">
+            </div>
+            <div class="text-content">
+                <span class="hello-tag">Hello!</span>
+                <h1>I'm <span>Waseem Khan</span></h1>
+                <h2>AI & Web3 Enthusiast | Prompt Engineer | Community & BD Specialist</h2>
+                <div class="button-group">
+                    <a href="#" class="action-btn fill-btn">Hire me</a>
+                    <a href="#" class="action-btn border-btn">My works</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-	      <!-- <div class="slider-item">
-	      	<div class="overlay"></div>
-	        <div class="container">
-	          <div class="row d-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_2.png);">
-	          		<div class="overlay"></div>
-	          	</div>
-		          <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-		          	<div class="text">
-		          		<span class="subheading">Hello!</span>
-			            <h1 class="mb-4 mt-3">I'm a <span>web designer</span> based in London</h1>
-			            <p><a href="#" class="btn btn-primary py-3 px-4">Hire me</a> <a href="#" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
-		            </div>
-		          </div>
-	        	</div>
-	        </div>
-	      </div>
-	    </div> -->
-    </section>
+<style>
+    /* Profile Section */
+    .profile-section {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        background: black;
+        padding: 40px 0;
+        overflow-x: hidden;
+    }
+    
+    .profile-section .wrapper {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    
+    .profile-section .bio-box {
+        display: flex;
+        align-items: center;
+        gap: 60px;
+        max-width: 100%;
+    }
+    
+    .profile-image-container {
+        flex: 1;
+        max-width: 400px;
+        animation: slideInLeft 1s ease;
+    }
+    
+    .profile-image {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 10px 30px rgba(255, 189, 57, 0.3);
+        transition: transform 0.5s ease;
+    }
+    
+    .profile-image:hover {
+        transform: scale(1.03);
+    }
+    
+    .text-content {
+        flex: 1;
+        max-width: 600px;
+    }
+    
+    .profile-section .hello-tag {
+        color: white;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: 10px;
+        display: block;
+        animation: slideDown 1s ease;
+    }
+    
+    .profile-section h1 {
+        font-size: 70px;
+        font-weight: 700;
+        font-family: 'Times New Roman', Times, serif;
+        color: white;
+        margin: 15px 0;
+        animation: fadeIn 1s ease;
+    }
+    
+    .profile-section h1 span {
+        color: rgb(255, 189, 57);
+        text-shadow: 0 0 10px rgba(255, 189, 57, 0.3);
+        transition: all 1s ease;
+    }
+    
+    .profile-section h1 span:hover {
+        text-shadow: 0 0 20px rgba(255, 189, 57, 0.5);
+    }
+    
+    .profile-section h2 {
+        font-size: 24px;
+        font-weight: 400;
+        font-family: 'Times New Roman', Times, serif;
+        color: white;
+        margin-bottom: 30px;
+        animation: fadeIn 0.5s ease;
+    }
+    
+    .profile-section .button-group {
+        display: flex;
+        gap: 15px;
+        animation: fadeIn 3s ease;
+    }
+    
+    .profile-section .action-btn {
+        display: inline-block;
+        padding: 15px 30px;
+        text-decoration: none;
+        border-radius: 4px;
+        font-weight: 600;
+        font-family: 'Times New Roman', Times, serif;
+        transition: all 0.5s ease;
+    }
+    
+    .profile-section .fill-btn {
+        background-color: rgb(255, 189, 57);
+        color: black;
+    }
+    
+    .profile-section .fill-btn:hover {
+        background-color: black;
+        color: rgb(255, 189, 57);
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(255, 189, 57, 0.4);
+    }
+    
+    .profile-section .border-btn {
+        border: 1px solid rgb(255, 189, 57);
+        color: white;
+        background: transparent;
+    }
+    
+    .profile-section .border-btn:hover {
+        background-color: black;
+        color: rgb(255, 189, 57);
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(255, 189, 57, 0.4);
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+    
+    @keyframes slideDown {
+        from { 
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        to { 
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    @keyframes slideInLeft {
+        from {
+            opacity: 0;
+            transform: translateX(-50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    /* Responsive */
+    @media (max-width: 992px) {
+        .profile-section .bio-box {
+            flex-direction: column;
+            gap: 40px;
+        }
+        
+        .profile-image-container {
+            max-width: 300px;
+        }
+        
+        .text-content {
+            text-align: center;
+        }
+        
+        .button-group {
+            justify-content: center;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .profile-section h1 {
+            font-size: 48px;
+        }
+        
+        .profile-section h2 {
+            font-size: 20px;
+        }
+        
+        .profile-section .button-group {
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .profile-section h1 {
+            font-size: 36px;
+        }
+        
+        .profile-image-container {
+            max-width: 250px;
+        }
+    }
+    
+    /* Smooth scrolling */
+    html {
+        scroll-behavior: smooth;
+    }
+</style>
 
     <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
     	<div class="container">
